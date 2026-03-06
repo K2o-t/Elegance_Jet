@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | ÉLÉGANCE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/menuburger.css">
+</head>
+<body>
+
+    <!-- NAVBAR AVEC MENU HAMBURGER -->
+<nav>
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+        <div class="logo">
+            <img src="media(moi)/logoej-Photoroom.png" alt="ÉLÉGANCE JET" class="logo-img">
+        </div>
+    </a>
+    
+    <!-- Menu hamburger button -->
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <ul class="nav-links">
+        <li><a href="collection.html">Collections</a></li>
+        <li><a href="artisanat.html">L'Atelier</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="experience.html">Expérience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="mobile-lang"><a href="#">FR / EN</a></li>
+    </ul>
+    
+    <div class="lang-switch">FR / EN</div>
+</nav>
+
+    <!-- HEADER CONTACT -->
+    <section class="contact-header">
+        <div class="hero-content">
+            <p class="subtitle">ÉLÉGANCE JET</p>
+            <h1 class="main-title">Nous Contacter</h1>
+            <p class="contact-subhead">Votre conseiller personnel est à votre écoute.</p>
+        </div>
+    </section>
+
+    <!-- CHAPITRE I - COORDONNÉES et le FORMULAIRE -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <span class="contact-sub">Chapitre I</span>
+                    <h2 class="contact-title">Échangeons ensemble</h2>
+                    <p class="contact-description">
+                        Que ce soit pour une réservation, un devis ou une information, notre équipe répond sous 2 heures.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-5">
+                <!-- COORDONNÉES -->
+                <div class="col-lg-5">
+                    <div class="contact-info-card">
+                        <div class="contact-info-item">
+                            <span class="contact-info-icon">✆</span>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <p>+33 (0)1 84 88 50 20</p>
+                                <small>24h/24, 7j/7</small>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <span class="contact-info-icon">✉</span>
+                            <div>
+                                <h4>Email</h4>
+                                <p>conciergerie@elegance-jet.com</p>
+                                <small>Réponse sous 2h</small>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <span class="contact-info-icon">◈</span>
+                            <div>
+                                <h4>Bureaux</h4>
+                                <p>19 Avenue de l'Opéra, 75001 Paris</p>
+                                <small>Sur rendez-vous uniquement</small>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <span class="contact-info-icon">⌚</span>
+                            <div>
+                                <h4>Horaires</h4>
+                                <p>Lun - Ven : 9h00 - 20h00</p>
+                                <small>Sam - Dim : Urgences uniquement</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FORMULAIRE DE CONTACT -->
+                <div class="col-lg-7">
+                    <div class="contact-form-card">
+                        <form id="contactForm">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <span class="form-label">Civilité</span>
+                                        <select class="form-control" id="civilite">
+                                            <option>Madame</option>
+                                            <option>Monsieur</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <span class="form-label">Nom / Société</span>
+                                        <input type="text" class="form-control" id="nom" placeholder="Votre nom ou société" required >
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <span class="form-label">Email</span>
+                                        <input type="email" class="form-control" id="email" placeholder="votre@email.com" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <span class="form-label">Téléphone</span>
+                                        <input type="tel" class="form-control" id="telephone" placeholder="+33 ..." required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <span class="form-label">Sujet</span>
+                                        <select class="form-control" id="sujet">
+                                            <option>Demande d'information</option>
+                                            <option>Devis location</option>
+                                            <option>Personnalisation artisanale</option>
+                                            <option>Programme fidélité</option>
+                                            <option>Autre demande</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <span class="form-label">Message</span>
+                                        <textarea class="form-control" id="message" rows="5" placeholder="Votre message..."></textarea required >
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="option-check">
+                                        <input type="checkbox" id="rgpd">
+                                        <label for="rgpd">J'accepte que mes données soient traitées pour répondre à ma demande.</label required >
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn-contact" id="submitContact">
+                                        Envoyer votre message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
+    <div class="separator-contact"></div>
+
+    <!-- CHAPITRE II - FAQ -->
+    <section class="contact-section bg-white">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <span class="contact-sub">Chapitre II</span>
+                    <h2 class="contact-title">Foire aux questions</h2>
+                    <p class="contact-description">
+                        Les réponses aux questions les plus fréquentes.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="faq-container">
+                        <!-- FAQ 1 -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-icon">◈</span>
+                                <h4>Comment réserver un vol ?</h4>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Vous pouvez réserver directement depuis notre page Location, ou nous contacter par téléphone ou email. Un devis personnalisé vous sera adressé sous 2 heures.</p>
+                            </div>
+                        </div>
+                        <!-- FAQ 2 -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-icon">◈</span>
+                                <h4>Quels sont les aéroports desservis ?</h4>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Nous opérons depuis tous les aéroports privés de France, Suisse et Monaco. Nos bases principales sont Paris-Le Bourget, Genève et Nice.</p>
+                            </div>
+                        </div>
+                        <!-- FAQ 3 -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-icon">◈</span>
+                                <h4>Puis-je personnaliser l'intérieur du jet ?</h4>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Oui, notre programme Artisanat vous permet de choisir cuirs, bois, couleurs et équipements. Délai de 6 à 8 mois pour une personnalisation complète.</p>
+                            </div>
+                        </div>
+                        <!-- FAQ 4 -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-icon">◈</span>
+                                <h4>Quelles sont les conditions d'annulation ?</h4>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>L'annulation est gratuite jusqu'à 48h avant le vol. Passé ce délai, des frais peuvent s'appliquer. Consultez nos CGV pour plus de détails.</p>
+                            </div>
+                        </div>
+                        <!-- FAQ 5 -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="faq-icon">◈</span>
+                                <h4>Le programme fidélité est-il cumulable ?</h4>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Oui, chaque heure de vol vous fait gagner des points ÉLÉGANCE, échangeables contre des surclassements ou des services exclusifs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2026 ÉLÉGANCE JET — TOUS DROITS RÉSERVÉS.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/menusandwich.js"></script>
+</body>
+</html>

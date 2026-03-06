@@ -1,0 +1,114 @@
+/* =========================================
+   MENU HAMBURGER POUR MOBILE
+   ========================================= */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #1a1a1a;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+/* Animation du hamburger en croix */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Version mobile - caché par défaut */
+.mobile-lang {
+    display: none;
+}
+
+/* Media query pour tablette et mobile */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    
+    .lang-switch {
+        display: none; /* Cache le FR/EN desktop */
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 3rem !important;
+        transition: left 0.3s ease;
+        gap: 2rem;
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
+    
+    .nav-links li {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+    .nav-links.active li {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    /* Délais d'apparition pour chaque lien */
+    .nav-links.active li:nth-child(1) { transition-delay: 0.1s; }
+    .nav-links.active li:nth-child(2) { transition-delay: 0.2s; }
+    .nav-links.active li:nth-child(3) { transition-delay: 0.3s; }
+    .nav-links.active li:nth-child(4) { transition-delay: 0.4s; }
+    .nav-links.active li:nth-child(5) { transition-delay: 0.5s; }
+    .nav-links.active li:nth-child(6) { transition-delay: 0.6s; }
+    
+    .nav-links a {
+        font-size: 1.2rem;
+        padding: 0.5rem 2rem;
+        display: block;
+    }
+    
+    .mobile-lang {
+        display: block;
+        margin-top: 1rem;
+        border-top: 1px solid #f0f0f0;
+        padding-top: 1rem;
+    }
+    
+    .mobile-lang a {
+        color: #c5a059 !important;
+    }
+}
+
+/* Pour très petits écrans */
+@media (max-width: 480px) {
+    .logo-img {
+        height: 50px;
+    }
+    
+    .nav-links a {
+        font-size: 1rem;
+    }
+}

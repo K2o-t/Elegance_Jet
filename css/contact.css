@@ -1,0 +1,261 @@
+/* =========================================
+   STYLES PAGE CONTACT */
+
+/* ----- HEADER CONTACT ----- */
+.contact-header {
+    background: linear-gradient(rgba(255,255,255,0.05), rgba(255,255,255,0.05)), 
+                 center/cover no-repeat;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.contact-header .hero-content {
+    background: white;
+    padding: 3rem 5rem;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.07);
+    max-width: 800px;
+}
+
+.contact-subhead {
+    font-style: italic;
+    color: #555;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+/* ----- SECTIONS ----- */
+.contact-section {
+    padding: 6rem 2rem;
+    background-color: #fcfcfc;
+}
+
+.contact-section.bg-white {
+    background-color: white;
+}
+
+.contact-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    font-weight: 400;
+}
+
+.contact-sub {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 0.8rem;
+    color: #c5a059;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.contact-description {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* ----- CARTE INFORMATIONS ----- */
+.contact-info-card {
+    background: white;
+    padding: 3rem 2rem;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.03);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.contact-info-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.contact-info-icon {
+    font-size: 1.8rem;
+    color: #c5a059;
+    line-height: 1;
+}
+
+.contact-info-item h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+
+.contact-info-item p {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 0.2rem;
+}
+
+.contact-info-item small {
+    font-size: 0.65rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ----- FORMULAIRE DE CONTACT ----- */
+.contact-form-card {
+    background: white;
+    padding: 3rem;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.03);
+    height: 100%;
+}
+
+.btn-contact {
+    background: transparent;
+    border: 1px solid #1a1a1a;
+    padding: 1rem 3rem;
+    font-size: 0.7rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    border-radius: 0;
+    transition: 0.3s;
+    display: inline-block;
+    width: 100%;
+}
+
+.btn-contact:hover {
+    background: #1a1a1a;
+    color: white;
+}
+
+/* ----- FAQ ----- */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: white;
+    margin-bottom: 1rem;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.02);
+    transition: 0.3s;
+    border-left: 3px solid transparent;
+}
+
+.faq-item:hover {
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+    border-left: 3px solid #c5a059;
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.faq-icon {
+    color: #c5a059;
+    font-size: 1.2rem;
+}
+
+.faq-question h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    font-weight: 400;
+    flex: 1;
+    color: #1a1a1a;
+}
+
+.faq-toggle {
+    font-size: 1.5rem;
+    color: #c5a059;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    display: none;
+    padding: 1.5rem 0 0.5rem 2.3rem;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #f0f0f0;
+    margin-top: 1rem;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+/* ----- SECTION CTA CONTACT ----- */
+.contact-cta-section {
+    padding: 4rem 2rem;
+    background-color: #fcfcfc;
+    text-align: center;
+    border-top: 1px solid #f0f0f0;
+}
+
+/* ----- SÉPARATEUR ----- */
+.separator-contact {
+    width: 60px;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 3rem auto;
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 768px) {
+    .contact-header {
+        height: 70vh;
+        margin-top: 70px;
+    }
+    
+    .contact-header .hero-content {
+        padding: 2rem;
+        margin: 0 1rem;
+    }
+    
+    .contact-title {
+        font-size: 2.2rem;
+    }
+    
+    .contact-section {
+        padding: 4rem 1rem;
+    }
+    
+    .contact-info-card,
+    .contact-form-card {
+        padding: 2rem;
+    }
+    
+    .contact-info-item {
+        gap: 1rem;
+    }
+    
+    .faq-item {
+        padding: 1.2rem;
+    }
+    
+    .faq-question h4 {
+        font-size: 1rem;
+    }
+}

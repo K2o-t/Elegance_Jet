@@ -1,0 +1,147 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #1a1a1a;
+    --accent-color: #c5a059;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* --- NAVIGATION (FIXÉ ET ALIGNÉ) --- */
+nav {
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligne EJ, les liens et FR/EN sur la même ligne horizontale */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    height: 80px; /* Force une hauteur fixe pour éviter les sauts */
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    flex: 1; 
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    margin: 0 !important;   
+    padding: 0 !important;  
+    flex: 2; 
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+.lang-switch {
+    flex: 1;
+    text-align: right;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* --- LE RESTE DU SITE --- */
+#mainDiv { height: 100vh; }
+
+.hero {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), 
+                url('media(moi)/jet.png') center/cover no-repeat;
+}
+
+.hero-content {
+    background: white;
+    padding: 4rem 6rem;
+    max-width: 800px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.07);
+}
+
+h1#MainText, .main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.cta {
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    border: 1px solid var(--text-color);
+    text-decoration: none;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+
+.details { padding: 8rem 0; text-align: center; }
+.details p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.6rem; }
+
+footer {
+    padding: 3rem;
+    text-align: center;
+    font-size: 0.7rem;
+    border-top: 1px solid #f0f0f0;
+    color: #bbb;
+}
+
+.carousel-inner img { height: 60vh; object-fit: cover; filter: brightness(0.8); }
+
+/* --- LOGO IMAGE --- */
+.logo-img {
+    height: 70px; 
+    width: auto;
+    display: block;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
